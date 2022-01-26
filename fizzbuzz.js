@@ -1,0 +1,13 @@
+function fizzBuzz(n){
+    let i = 1
+    while(i <= n){
+        let result = ""
+        if(i%3 == 0) result += "Fizz"
+        if(i%5 == 0) result += "Buzz"
+        
+        console.log(result || i); 
+        i++
+    }
+}
+
+fizzBuzz(100)
